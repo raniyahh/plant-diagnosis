@@ -71,6 +71,8 @@ def diagnose():
     else:
         disease_name = "غير محدد"
         probability = 0
+        plant_name = "غير معروف"
+
 
     # 📝 حفظ البيانات
     diagnosis = {

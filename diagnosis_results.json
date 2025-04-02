@@ -17,5 +17,11 @@
         "disease": "Animalia",
         "plant_name": "Desmodium tortuosum",
         "probability": 85.7
+    },
+    {
+        "image": "15.jpg",
+        "disease": "Animalia",
+        "plant_name": "Callicarpa acuminata",
+        "probability": 46.6
     }
 ]
