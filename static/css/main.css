@@ -1896,16 +1896,18 @@ body {
   }
   
   .diagnosis-result strong {
-	color: #27322b; /* لون مميز للعناوين */
+	letter-spacing: normal !important;
+	color: #ffffff; /* لون مميز للعناوين */
 	font-weight: bold;
 	font-size: 20px;
   }
 
   #result h4 {
+	letter-spacing: normal !important;
 	font-family: 'Lateef', serif; /* أو أي خط تبغينه */
 	font-weight: 600;
 	font-size: 22px;
-	color: #27322b; /* لون جذاب، ممكن تغيريه */
+	color: #ffffff; /* لون جذاب، ممكن تغيريه */
   }
   
   

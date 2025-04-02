@@ -1,46 +1,21 @@
 [
     {
-        "image": "1.jpg",
-        "disease": "Fungi",
-        "probability": 61.6,
-        "date": "2025-04-02 00:28:21"
-    },
-    {
-        "image": "2.jpg",
-        "disease": "Animalia",
-        "probability": 69.6,
-        "symptom": "Leaf dieback",
-        "symptom_score": 16.4
-    },
-    {
-        "image": "3.jpg",
-        "disease": "bacterial leaf spot",
-        "probability": 75.8,
-        "symptom": "Wilted leaves",
-        "symptom_score": 29.3
-    },
-    {
-        "image": "4.jpg",
-        "disease": "Fungi",
-        "probability": 58.1,
-        "symptom": "Leaf spots",
-        "symptom_score": 6.1,
-        "treatment": "لا يوجد علاج بيولوجي"
-    },
-    {
-        "image": "7.jpg",
-        "disease": "Animalia",
-        "probability": 46.6,
-        "symptom": "Leaf spots",
-        "symptom_score": 5.9,
-        "treatment_bio": "لا يوجد علاج بيولوجي",
-        "treatment_chem": "لا يوجد علاج كيميائي"
-    },
-    {
         "image": "8.jpg",
         "disease": "Animalia",
         "plant_name": "Carex riparia",
         "probability": 99.0,
         "watering": "غير متوفر"
+    },
+    {
+        "image": "10.jpg",
+        "disease": "Fungi",
+        "plant_name": "Zea mays",
+        "probability": 69.5
+    },
+    {
+        "image": "11.jpg",
+        "disease": "Animalia",
+        "plant_name": "Desmodium tortuosum",
+        "probability": 85.7
     }
 ]
