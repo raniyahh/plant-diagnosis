@@ -194,6 +194,7 @@ input, select, textarea {
 			width: -webkit-max-content;
 			width: -ms-max-content;
 			width: max-content;
+			font-size: 2.2rem !important;
 			padding-bottom: 0.5rem;
 			margin: 0 0 2rem 0;
 
@@ -1367,8 +1368,8 @@ input, select, textarea {
 					line-height: 2.75rem;
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
-					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					letter-spacing: 0.1rem;
+					font-size: 1.2rem;
 					border-bottom: 0;
 				}
 
@@ -1690,7 +1691,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 40px;
-	padding: 70px 20px;
+	padding: 40px 20px;
 	list-style: none;
   }
   .item {
@@ -1706,6 +1707,7 @@ body {
 	align-items: center;
 	width: 230px;
 	height: 200px;
+	margin-bottom: 20px;
 	border-radius: 20px;
 	position: relative;
 	background:	rgba(19, 21, 25, 0.5);
@@ -1747,7 +1749,7 @@ body {
 	inset: auto 20px 50px;
 	line-height: 1.5;
 	text-align: center;
-	font-size: 30px;
+	font-size: 25px;
 	opacity: 0;
 	transition: 0.3s;
   }
@@ -1813,5 +1815,100 @@ body {
 	object-fit: cover;
 	object-position: center;
   }	
+
+ /* زر رفع الصورة */
+.file-upload {
+	display: block;
+	text-align: center;
+	font-family: 'Lateef';
+	font-size: 22px;
+	margin-bottom: 50px;
+  }
+  
+  .file-upload .file-select {
+	display: block;
+	border: 2px solid #dce4ec;
+	color: #27322b;
+	cursor: pointer;
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	background: #FFFFFF;
+	overflow: hidden;
+	position: relative;
+	border-radius: 8px;
+  }
+  
+  .file-upload .file-select .file-select-button {
+	background: #d4e6d2;
+	padding: 0 10px;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+  }
+  
+  .file-upload .file-select .file-select-name {
+	line-height: 40px;
+	display: inline-block;
+	padding: 0 10px;
+  }
+  
+  .file-upload .file-select:hover {
+	border-color: #27322b;
+  }
+  
+  .file-upload .file-select:hover .file-select-button {
+	background: #fde61b;
+	color: #201e1e;
+  }
+  
+  .file-upload.active .file-select {
+	border-color: #37ac3d;
+  }
+  
+  .file-upload.active .file-select .file-select-button {
+	background: #37ac3d;
+	color: #FFFFFF;
+  }
+  
+  .file-upload .file-select input[type=file] {
+	z-index: 100;
+	cursor: pointer;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+  }
+
+ /*النتائج*/
+  .diagnosis-result {
+	margin-top: 20px;
+	color: #f8f8f8;
+	font-size: 22px;
+	font-family: 'Lateef';
+	background-color: rgba(255, 255, 255, 0.05);
+	padding: 20px;
+	border-radius: 12px;
+	line-height: 2;
+	text-align: right;
+  }
+  
+  .diagnosis-result strong {
+	color: #27322b; /* لون مميز للعناوين */
+	font-weight: bold;
+	font-size: 20px;
+  }
+
+  #result h4 {
+	font-family: 'Lateef', serif; /* أو أي خط تبغينه */
+	font-weight: 600;
+	font-size: 22px;
+	color: #27322b; /* لون جذاب، ممكن تغيريه */
+  }
+  
+  
+   
 
 		  

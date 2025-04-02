@@ -18,5 +18,29 @@
         "probability": 75.8,
         "symptom": "Wilted leaves",
         "symptom_score": 29.3
+    },
+    {
+        "image": "4.jpg",
+        "disease": "Fungi",
+        "probability": 58.1,
+        "symptom": "Leaf spots",
+        "symptom_score": 6.1,
+        "treatment": "لا يوجد علاج بيولوجي"
+    },
+    {
+        "image": "7.jpg",
+        "disease": "Animalia",
+        "probability": 46.6,
+        "symptom": "Leaf spots",
+        "symptom_score": 5.9,
+        "treatment_bio": "لا يوجد علاج بيولوجي",
+        "treatment_chem": "لا يوجد علاج كيميائي"
+    },
+    {
+        "image": "8.jpg",
+        "disease": "Animalia",
+        "plant_name": "Carex riparia",
+        "probability": 99.0,
+        "watering": "غير متوفر"
     }
 ]

@@ -51,3 +51,15 @@ document.getElementById("diagnose-button").addEventListener("click", async funct
 
   output.innerHTML = html;
 });
+
+
+$('#plant-image').bind('change', function () {
+  var filename = $("#plant-image").val();
+  if (/^\s*$/.test(filename)) {
+    $(".file-upload").removeClass('active');
+    $("#noFile").text("لم يتم اختيار أي صورة..."); 
+  } else {
+    $(".file-upload").addClass('active');
+    $("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
+  }
+});

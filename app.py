@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 PLANT_ID_API_KEY = "Ge8F5JMobZg40zvRPHBiXpcMoJHF61OAwM8ot0QzhogNFLx9UG"
 PLANT_ID_URL = "https://plant.id/api/v3/identification"
+PLANT_DETAILS_URL = "https://plant.id/api/v3/kb/plants/"
 
 UPLOAD_FOLDER = "static/uploads"
 RESULTS_FILE = "diagnosis_results.json"
@@ -59,26 +60,24 @@ def diagnose():
 
     # 🟢 استخراج أعلى مرض
     suggestions = result.get("result", {}).get("disease", {}).get("suggestions", [])
-    disease_name = suggestions[0].get("name", "غير محدد") if suggestions else "غير محدد"
-    probability = round(suggestions[0].get("probability", 0) * 100, 1) if suggestions else 0
+    if suggestions:
+        top_disease = suggestions[0]
+        disease_name = top_disease.get("name", "غير محدد")
+        # 🟢 استخراج اسم النبتة
+        plant_suggestions = result.get("result", {}).get("classification", {}).get("suggestions", [])
+        plant_name = plant_suggestions[0].get("name", "غير معروف") if plant_suggestions else "غير معروف"
 
-    # 🟢 استخراج أعلى عرض
-    symptoms = result.get("result", {}).get("symptom", {}).get("suggestions", [])
-    if symptoms:
-        top_symptom = max(symptoms, key=lambda s: s.get("score", 0))
-        symptom_name = top_symptom.get("name", "غير معروف")
-        symptom_score = round(top_symptom.get("score", 0) * 100, 1)
+        probability = round(top_disease.get("probability", 0) * 100, 1)
     else:
-        symptom_name = "لا يوجد"
-        symptom_score = 0
+        disease_name = "غير محدد"
+        probability = 0
 
     # 📝 حفظ البيانات
     diagnosis = {
         "image": filename,
         "disease": disease_name,
+        "plant_name": plant_name,
         "probability": probability,
-        "symptom": symptom_name,
-        "symptom_score": symptom_score
     }
 
     if not os.path.exists(RESULTS_FILE):
