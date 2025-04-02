@@ -1,0 +1,22 @@
+[
+    {
+        "image": "1.jpg",
+        "disease": "Fungi",
+        "probability": 61.6,
+        "date": "2025-04-02 00:28:21"
+    },
+    {
+        "image": "2.jpg",
+        "disease": "Animalia",
+        "probability": 69.6,
+        "symptom": "Leaf dieback",
+        "symptom_score": 16.4
+    },
+    {
+        "image": "3.jpg",
+        "disease": "bacterial leaf spot",
+        "probability": 75.8,
+        "symptom": "Wilted leaves",
+        "symptom_score": 29.3
+    }
+]
